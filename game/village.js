@@ -7,9 +7,9 @@ createPath(village,"pathH");
 createMainBuilding(village);
 createMine(village,20,25);
 createForge(village,80,25);
-createHouse(village,25,72);
-createHouse(village,75,72);
-createWell(village,50,82);
+createHouse(village,25,68);
+createHouse(village,75,68);
+createWell(village,50,78);
 createFence(village)
 }
 function createMainBuilding(p){
@@ -60,11 +60,11 @@ p.appendChild(e)
 function createFence(p){
 const f=document.createElement("div");
 f.id="fence";
-for(let x=10;x<=90;x+=10){
+for(let x=5;x<=95;x+=10){
 piece(f,x,6,"horizontal");
-piece(f,x,94,"horizontal")
+piece(f,x,90,"horizontal")
 }
-for(let y=16;y<=84;y+=10){
+for(let y=16;y<=80;y+=10){
 piece(f,5,y,"vertical");
 piece(f,95,y,"vertical")
 }
