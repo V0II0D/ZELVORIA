@@ -7,8 +7,8 @@ createPath(village,"pathH");
 createMainBuilding(village);
 createMine(village,20,25);
 createForge(village,80,25);
-createBuilding(village,"building house","🏠",25,72);
-createBuilding(village,"building house","🏠",75,72);
+createHouse(village,25,72);
+createHouse(village,75,72);
 createBuilding(village,"building well","💧",50,82);
 createTree(village,8,18);
 createTree(village,92,18);
@@ -36,6 +36,14 @@ function createForge(p,x,y){
 const e=document.createElement("img");
 e.src="game/objects/forge.svg";
 e.className="forgeBuilding";
+e.style.left=x+"%";
+e.style.top=y+"%";
+p.appendChild(e)
+}
+function createHouse(p,x,y){
+const e=document.createElement("img");
+e.src="game/objects/house.svg";
+e.className="houseBuilding";
 e.style.left=x+"%";
 e.style.top=y+"%";
 p.appendChild(e)
