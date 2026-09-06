@@ -1,18 +1,47 @@
 export function createVillage(){
 const village=document.getElementById("village");
+village.innerHTML="";
 village.style.transform="translate(-50%,-50%) scale(1.05)";
-const fence=document.createElement("div");
-fence.id="fence";
-for(let x=8;x<=92;x+=8)createFence(fence,x,0);
-for(let x=8;x<=92;x+=8)createFence(fence,x,100);
-for(let y=8;y<=92;y+=8){createFence(fence,0,y);createFence(fence,100,y)}
-village.appendChild(fence);
+createPath(village,"pathV");
+createPath(village,"pathH");
+createBuilding(village,"mainBuilding","🏰",50,42);
+createBuilding(village,"building mine","⛏️",20,25);
+createBuilding(village,"building forge","⚒️",80,25);
+createBuilding(village,"building house","🏠",25,72);
+createBuilding(village,"building house","🏠",75,72);
+createBuilding(village,"building well","💧",50,82);
+createTree(village,8,18);
+createTree(village,92,18);
+createTree(village,8,82);
+createTree(village,92,82);
+createFence(village)
 }
-function createFence(parent,x,y){
-const img=document.createElement("img");
-img.src="game/objects/fence.svg";
-img.className="fencePiece";
-img.style.left=x+"%";
-img.style.top=y+"%";
-parent.appendChild(img);
+function createBuilding(p,c,t,x,y){
+const e=document.createElement("div");
+e.className=c;
+e.textContent=t;
+e.style.left=x+"%";
+e.style.top=y+"%";
+p.appendChild(e)
+}
+function createTree(p,x,y){createBuilding(p,"villageTree","🌳",x,y)}
+function createPath(p,c){
+const e=document.createElement("div");
+e.className=c;
+p.appendChild(e)
+}
+function createFence(p){
+const f=document.createElement("div");
+f.id="fence";
+for(let x=8;x<=92;x+=8){piece(f,x,0);piece(f,x,100)}
+for(let y=8;y<=92;y+=8){piece(f,0,y);piece(f,100,y)}
+p.appendChild(f)
+}
+function piece(p,x,y){
+const e=document.createElement("img");
+e.src="game/objects/fence.svg";
+e.className="fencePiece";
+e.style.left=x+"%";
+e.style.top=y+"%";
+p.appendChild(e)
 }
