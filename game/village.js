@@ -9,7 +9,7 @@ createMine(village,20,25);
 createForge(village,80,25);
 createHouse(village,25,72);
 createHouse(village,75,72);
-createBuilding(village,"building well","💧",50,82);
+createWell(village,50,82);
 createTree(village,8,18);
 createTree(village,92,18);
 createTree(village,8,82);
@@ -44,6 +44,14 @@ function createHouse(p,x,y){
 const e=document.createElement("img");
 e.src="game/objects/house.svg";
 e.className="houseBuilding";
+e.style.left=x+"%";
+e.style.top=y+"%";
+p.appendChild(e)
+}
+function createWell(p,x,y){
+const e=document.createElement("img");
+e.src="game/objects/well.svg";
+e.className="wellBuilding";
 e.style.left=x+"%";
 e.style.top=y+"%";
 p.appendChild(e)
