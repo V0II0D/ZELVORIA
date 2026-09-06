@@ -60,15 +60,24 @@ p.appendChild(e)
 function createFence(p){
 const f=document.createElement("div");
 f.id="fence";
-for(let x=4;x<=96;x+=8){piece(f,x,0);piece(f,x,100)}
-for(let y=8;y<=92;y+=8){piece(f,0,y);piece(f,100,y)}
-piece(f,0,0);piece(f,100,0);piece(f,0,100);piece(f,100,100);
+for(let x=4;x<=96;x+=8){
+piece(f,x,0,"horizontal");
+piece(f,x,100,"horizontal")
+}
+for(let y=8;y<=92;y+=8){
+piece(f,0,y,"vertical");
+piece(f,100,y,"vertical")
+}
+piece(f,0,0,"corner");
+piece(f,100,0,"corner");
+piece(f,0,100,"corner");
+piece(f,100,100,"corner");
 p.appendChild(f)
 }
-function piece(p,x,y){
+function piece(p,x,y,type){
 const e=document.createElement("img");
 e.src="game/objects/fence.svg";
-e.className="fencePiece";
+e.className="fencePiece "+type;
 e.style.left=x+"%";
 e.style.top=y+"%";
 p.appendChild(e)
