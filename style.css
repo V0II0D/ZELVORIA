@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111;font-family:Arial,sans-serif}
+body{touch-action:none}
+#game{width:100vw;height:100vh;display:flex;flex-direction:column}
+#top{height:64px;background:#222;border-bottom:4px solid #111;display:flex;align-items:center;justify-content:space-around;color:white;font-size:18px;font-weight:bold}
+#top button{border:0;background:#555;color:white;font-size:22px;width:50px;height:45px;border-radius:8px}
+#world{position:relative;flex:1;background:#4f8f3a;overflow:hidden}
+#world:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#6ba64b 2px,transparent 2px);background-size:32px 32px;opacity:.35}
+#village{position:absolute;left:50%;top:50%;width:300px;height:220px;transform:translate(-50%,-50%);background:#8b6b3e;border:8px solid #654b2b;border-radius:18px;box-shadow:0 0 0 6px #9b793f}
+#mainBuilding{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:90px;height:80px;background:#777;border:5px solid #444;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:48px}
+.building{position:absolute;width:55px;height:55px;background:#c49a62;border:4px solid #654b2b;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px}
+.mine{left:20px;top:25px}
+.forge{right:20px;top:25px}
+.well{left:50%;bottom:15px;transform:translateX(-50%)}
+#bottom{height:76px;background:#222;border-top:4px solid #111;display:flex;align-items:center;justify-content:space-around}
+#bottom button{height:54px;padding:0 22px;background:#c58b35;border:4px solid #704d20;border-radius:10px;color:white;font-size:16px;font-weight:bold}
