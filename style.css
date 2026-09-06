@@ -25,3 +25,4 @@ body{touch-action:none}
 .fencePiece{position:absolute;width:32px;height:32px;transform:translate(-50%,-50%);image-rendering:pixelated}
 .mineBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
 .forgeBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
+.houseBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
