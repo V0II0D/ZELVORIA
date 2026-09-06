@@ -1,15 +1,15 @@
-import{createVillage}from’./village.js’;
-import{createWorld}from’./world.js’;
+import{createVillage}from'./village.js';
+import{createWorld}from'./world.js';
 let silver=0,gold=0,wave=1,villageLevel=1;
-const silverEl=document.getElementById(‘silver’);
-const goldEl=document.getElementById(‘gold’);
-const waveEl=document.getElementById(‘wave’);
-const villageLevelEl=document.getElementById(‘villageLevel’);
+let silverEl=document.getElementById('silver');
+let goldEl=document.getElementById('gold');
+let waveEl=document.getElementById('wave');
+let villageLevelEl=document.getElementById('villageLevel');
 createWorld();
 createVillage();
-document.getElementById(‘gameShop’).onclick=()=>alert(‘Игровой магазин’);
-document.getElementById(‘customShop’).onclick=()=>alert(‘Магазин кастомизации’);
-document.getElementById(‘pause’).onclick=()=>alert(‘Пауза’);
+document.getElementById('gameShop').onclick=()=>alert('Игровой магазин');
+document.getElementById('customShop').onclick=()=>alert('Магазин кастомизации');
+document.getElementById('pause').onclick=()=>alert('Пауза');
 function updateUI(){
 silverEl.textContent=silver;
 goldEl.textContent=gold;
