@@ -19,3 +19,12 @@ body{touch-action:none}
 #bottom button{height:54px;padding:0 22px;background:#c58b35;border:4px solid #704d20;border-radius:10px;color:white;font-size:16px;font-weight:bold}
 #fence{position:absolute;inset:-22px;z-index:3;pointer-events:none}
 .fencePiece{position:absolute;width:32px;height:32px;transform:translate(-50%,-50%)}
+.pathV{position:absolute;left:46%;top:0;width:8%;height:100%;background:#c49a62;opacity:.8;z-index:0}
+.pathH{position:absolute;left:0;top:38%;width:100%;height:8%;background:#c49a62;opacity:.8;z-index:0}
+.building{position:absolute;width:55px;height:55px;background:#c49a62;border:4px solid #654b2b;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;transform:translate(-50%,-50%);z-index:2}
+#mainBuilding{width:100px;height:90px;background:#d9a441;border:5px solid #42291b;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:52px;z-index:3}
+.villageTree{position:absolute;transform:translate(-50%,-50%);font-size:34px;z-index:2}
+.mine{left:20px;top:25px}
+.forge{right:20px;top:25px}
+.house{background:#a66b3f}
+.well{background:#668fb0}
