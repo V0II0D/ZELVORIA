@@ -4,7 +4,7 @@ village.innerHTML="";
 village.style.transform="translate(-50%,-50%) scale(1.05)";
 createPath(village,"pathV");
 createPath(village,"pathH");
-createBuilding(village,"mainBuilding","🏰",50,42);
+createMainBuilding(village);
 createBuilding(village,"building mine","⛏️",20,25);
 createBuilding(village,"building forge","⚒️",80,25);
 createBuilding(village,"building house","🏠",25,72);
@@ -15,6 +15,14 @@ createTree(village,92,18);
 createTree(village,8,82);
 createTree(village,92,82);
 createFence(village)
+}
+function createMainBuilding(p){
+const e=document.createElement("img");
+e.src="game/objects/main-building.svg";
+e.className="mainBuilding";
+e.style.left="50%";
+e.style.top="42%";
+p.appendChild(e)
 }
 function createBuilding(p,c,t,x,y){
 const e=document.createElement("div");
