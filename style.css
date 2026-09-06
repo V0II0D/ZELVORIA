@@ -11,8 +11,8 @@ body{touch-action:none}
 .mine{left:20px;top:25px}
 .forge{right:20px;top:25px}
 .well{left:50%;bottom:15px;transform:translateX(-50%)}
-.worldObject{position:absolute;z-index:1;transform:translate(-50%,-50%);font-size:32px;user-select:none}
-.tree{font-size:34px}
+.worldObject{position:absolute;z-index:1;transform:translate(-50%,-50%);user-select:none}
+.worldObject img{display:block;width:64px;height:80px}
 .rock{font-size:24px}
 .water{width:90px;height:50px;background:#4b9bd1;border:4px solid #28638c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
 #bottom{height:76px;background:#222;border-top:4px solid #111;display:flex;align-items:center;justify-content:space-around}
