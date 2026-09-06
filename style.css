@@ -27,5 +27,3 @@ body{touch-action:none}
 .forgeBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
 .houseBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
 .wellBuilding{position:absolute;width:65px;height:65px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
-.worldObject.rock img{width:55px;height:55px}
-.worldObject.water img{width:110px;height:65px}
