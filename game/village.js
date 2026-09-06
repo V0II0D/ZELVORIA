@@ -10,10 +10,6 @@ createForge(village,80,25);
 createHouse(village,25,72);
 createHouse(village,75,72);
 createWell(village,50,82);
-createTree(village,8,18);
-createTree(village,92,18);
-createTree(village,8,82);
-createTree(village,92,82);
 createFence(village)
 }
 function createMainBuilding(p){
@@ -56,15 +52,6 @@ e.style.left=x+"%";
 e.style.top=y+"%";
 p.appendChild(e)
 }
-function createBuilding(p,c,t,x,y){
-const e=document.createElement("div");
-e.className=c;
-e.textContent=t;
-e.style.left=x+"%";
-e.style.top=y+"%";
-p.appendChild(e)
-}
-function createTree(p,x,y){createBuilding(p,"villageTree","🌳",x,y)}
 function createPath(p,c){
 const e=document.createElement("div");
 e.className=c;
