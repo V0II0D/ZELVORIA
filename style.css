@@ -17,3 +17,5 @@ body{touch-action:none}
 .worldObject img{display:block;width:64px;height:80px}
 #bottom{height:76px;background:#222;border-top:4px solid #111;display:flex;align-items:center;justify-content:space-around}
 #bottom button{height:54px;padding:0 22px;background:#c58b35;border:4px solid #704d20;border-radius:10px;color:white;font-size:16px;font-weight:bold}
+#fence{position:absolute;inset:-22px;z-index:4;pointer-events:none}
+.fencePiece{position:absolute;width:40px;height:40px;transform:translate(-50%,-50%);image-rendering:pixelated}
