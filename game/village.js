@@ -60,18 +60,14 @@ p.appendChild(e)
 function createFence(p){
 const f=document.createElement("div");
 f.id="fence";
-for(let x=4;x<=96;x+=8){
-piece(f,x,0,"horizontal");
-piece(f,x,100,"horizontal")
+for(let x=10;x<=90;x+=10){
+piece(f,x,6,"horizontal");
+piece(f,x,94,"horizontal")
 }
-for(let y=8;y<=92;y+=8){
-piece(f,0,y,"vertical");
-piece(f,100,y,"vertical")
+for(let y=16;y<=84;y+=10){
+piece(f,5,y,"vertical");
+piece(f,95,y,"vertical")
 }
-piece(f,0,0,"corner");
-piece(f,100,0,"corner");
-piece(f,0,100,"corner");
-piece(f,100,100,"corner");
 p.appendChild(f)
 }
 function piece(p,x,y,type){
