@@ -10,12 +10,9 @@ const el=document.createElement("div");
 el.className=`worldObject ${type}`;
 el.style.left=x+"%";
 el.style.top=y+"%";
-if(type==="tree"){
 const img=document.createElement("img");
-img.src="game/objects/tree.svg";
+img.src=`game/objects/${type}.svg`;
 el.appendChild(img);
-}else if(type==="rock")el.textContent="🪨";
-else if(type==="water")el.textContent="💧";
 world.appendChild(el);
 });
 }
