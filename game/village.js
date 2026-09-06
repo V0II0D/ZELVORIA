@@ -5,7 +5,7 @@ village.style.transform="translate(-50%,-50%) scale(1.05)";
 createPath(village,"pathV");
 createPath(village,"pathH");
 createMainBuilding(village);
-createBuilding(village,"building mine","⛏️",20,25);
+createMine(village,20,25);
 createBuilding(village,"building forge","⚒️",80,25);
 createBuilding(village,"building house","🏠",25,72);
 createBuilding(village,"building house","🏠",75,72);
@@ -22,6 +22,14 @@ e.src="game/objects/main-building.svg";
 e.className="mainBuilding";
 e.style.left="50%";
 e.style.top="42%";
+p.appendChild(e)
+}
+function createMine(p,x,y){
+const e=document.createElement("img");
+e.src="game/objects/mine.svg";
+e.className="mineBuilding";
+e.style.left=x+"%";
+e.style.top=y+"%";
 p.appendChild(e)
 }
 function createBuilding(p,c,t,x,y){
