@@ -1,6 +1,4 @@
 export function createVillage(){
 const village=document.getElementById("village");
-village.style.borderRadius="24px";
-village.style.borderWidth="10px";
-village.dataset.level="1";
+village.style.transform="translate(-50%,-50%) scale(1.05)";
 }
