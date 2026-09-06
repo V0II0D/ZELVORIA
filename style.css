@@ -5,20 +5,15 @@ body{touch-action:none}
 #top{height:64px;background:#222;border-bottom:4px solid #111;display:flex;align-items:center;justify-content:space-around;color:white;font-size:18px;font-weight:bold}
 #top button{border:0;background:#555;color:white;font-size:22px;width:50px;height:45px;border-radius:8px}
 #world{position:relative;flex:1;background:#4d8738 url("game/objects/grass.svg") repeat;overflow:hidden;background-size:64px 64px}
-#village{position:absolute;left:50%;top:50%;width:300px;height:220px;transform:translate(-50%,-50%);background:#6f9d45;border:8px solid #654b2b;border-radius:18px;box-shadow:0 0 0 6px #9b793f;z-index:2}
+#village{position:absolute;left:50%;top:50%;width:300px;height:220px;transform:translate(-50%,-50%);background:transparent;border:0;border-radius:0;box-shadow:none;z-index:2}
 .pathV{position:absolute;left:46%;top:0;width:8%;height:100%;background:#c49a62;opacity:.8;z-index:0}
 .pathH{position:absolute;left:0;top:38%;width:100%;height:8%;background:#c49a62;opacity:.8;z-index:0}
 .mainBuilding{position:absolute;width:110px;height:110px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
-.building{position:absolute;width:55px;height:55px;background:#c49a62;border:4px solid #654b2b;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;transform:translate(-50%,-50%);z-index:2}
-.mine{left:20px;top:25px}
-.forge{right:20px;top:25px}
-.house{background:#a66b3f}
-.well{background:#668fb0}
-.worldObject{position:absolute;z-index:1;transform:translate(-50%,-50%);user-select:none}
-.worldObject img{display:block;width:64px;height:80px}
-#bottom{height:76px;background:#222;border-top:4px solid #111;display:flex;align-items:center;justify-content:space-around}
-#bottom button{height:54px;padding:0 22px;background:#c58b35;border:4px solid #704d20;border-radius:10px;color:white;font-size:16px;font-weight:bold}
 .mineBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
 .forgeBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
 .houseBuilding{position:absolute;width:75px;height:75px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
 .wellBuilding{position:absolute;width:65px;height:65px;transform:translate(-50%,-50%);z-index:3;image-rendering:pixelated}
+.worldObject{position:absolute;z-index:1;transform:translate(-50%,-50%);user-select:none}
+.worldObject img{display:block;width:64px;height:80px}
+#bottom{height:76px;background:#222;border-top:4px solid #111;display:flex;align-items:center;justify-content:space-around}
+#bottom button{height:54px;padding:0 22px;background:#c58b35;border:4px solid #704d20;border-radius:10px;color:white;font-size:16px;font-weight:bold}
