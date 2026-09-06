@@ -18,6 +18,6 @@ body{touch-action:none}
 #bottom{height:76px;background:#222;border-top:4px solid #111;display:flex;align-items:center;justify-content:space-around}
 #bottom button{height:54px;padding:0 22px;background:#c58b35;border:4px solid #704d20;border-radius:10px;color:white;font-size:16px;font-weight:bold}
 #fence{position:absolute;inset:0;z-index:4;pointer-events:none}
-.fencePiece{position:absolute;width:26px;height:26px;image-rendering:pixelated;transform:translate(-50%,-50%)}
-.fencePiece.horizontal{width:30px;height:18px}
+.fencePiece{position:absolute;image-rendering:pixelated;transform:translate(-50%,-50%)}
+.fencePiece.horizontal{width:34px;height:18px}
 .fencePiece.vertical{width:18px;height:30px}
